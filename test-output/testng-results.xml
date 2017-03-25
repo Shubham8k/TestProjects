@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="30665" started-at="2017-03-01T21:16:59Z" finished-at="2017-03-01T21:17:29Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="30665" started-at="2017-03-01T21:16:59Z" finished-at="2017-03-01T21:17:29Z">
+      <class name="miniWo.tests.MiniWo_TC03_ExistingUserRating">
+        <test-method status="PASS" signature="getUrl()[pri:0, instance:miniWo.tests.MiniWo_TC03_ExistingUserRating@1cd072a9]" name="getUrl" is-config="true" duration-ms="19306" started-at="2017-03-02T02:46:59Z" finished-at="2017-03-02T02:47:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUrl -->
+        <test-method status="PASS" signature="SearchResults()[pri:0, instance:miniWo.tests.MiniWo_TC03_ExistingUserRating@1cd072a9]" name="SearchResults" duration-ms="11023" started-at="2017-03-02T02:47:18Z" finished-at="2017-03-02T02:47:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchResults -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:miniWo.tests.MiniWo_TC03_ExistingUserRating@1cd072a9]" name="CloseBrowser" is-config="true" duration-ms="319" started-at="2017-03-02T02:47:29Z" finished-at="2017-03-02T02:47:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- miniWo.tests.MiniWo_TC03_ExistingUserRating -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
