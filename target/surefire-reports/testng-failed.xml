@@ -4,8 +4,17 @@
   <test name="Test">
     <classes>
       <class name="miniWo.tests.MiniWo_TC01_SearchResults"/>
-      <class name="miniWo.tests.MiniWo_TC02_NewUserRating"/>
-      <class name="miniWo.tests.MiniWo_TC03_ExistingUserRating"/>
     </classes>
   </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="miniWo.tests.MiniWo_TC01_SearchResults">
+        <methods>
+          <include name="getUrl"/>
+          <include name="SearchResults"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- miniWo.tests.MiniWo_TC01_SearchResults -->
+    </classes>
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

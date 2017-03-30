@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 02 03:03:03 IST 2017</td>
+<td>Started on:</td><td>Sat Mar 25 14:39:13 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>113 seconds (113130 ms)</td>
+<tr><td>Total time:</td><td>35 seconds (35847 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,19 +76,45 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='miniWo.tests.MiniWo_TC01_SearchResults.SearchResults()'><b>SearchResults</b><br>Test class: miniWo.tests.MiniWo_TC01_SearchResults</td>
-<td></td>
-<td>15</td>
-<td>miniWo.tests.MiniWo_TC01_SearchResults@180bc464</td></tr>
-<tr>
-<td title='miniWo.tests.MiniWo_TC02_NewUserRating.SearchResults()'><b>SearchResults</b><br>Test class: miniWo.tests.MiniWo_TC02_NewUserRating</td>
-<td></td>
-<td>16</td>
-<td>miniWo.tests.MiniWo_TC02_NewUserRating@1324409e</td></tr>
-<tr>
-<td title='miniWo.tests.MiniWo_TC03_ExistingUserRating.SearchResults()'><b>SearchResults</b><br>Test class: miniWo.tests.MiniWo_TC03_ExistingUserRating</td>
-<td></td>
-<td>10</td>
-<td>miniWo.tests.MiniWo_TC03_ExistingUserRating@2c6a3f77</td></tr>
+<td><div><pre>java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at miniWo.utils.CommonActions.getsubstring(CommonActions.java:11)
+	at miniWo.tests.MiniWo_TC01_SearchResults.SearchResults(MiniWo_TC01_SearchResults.java:41)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1482246673", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1482246673'><pre>java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at miniWo.utils.CommonActions.getsubstring(CommonActions.java:11)
+	at miniWo.tests.MiniWo_TC01_SearchResults.SearchResults(MiniWo_TC01_SearchResults.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>2</td>
+<td>miniWo.tests.MiniWo_TC01_SearchResults@17550481</td></tr>
 </table><p>
 </body>
 </html>
